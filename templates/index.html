@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(219, 221, 210);
+  /* max-width: 80%;
+  margin-left: 10%; */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  max-width: 100%;
+  opacity: .8;
+  color: red;
+  margin-bottom: 0%;
+  /* margin-left: -15%;
+  margin-right: -15%; */
+
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: red;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+.dropdown {
+  float: right;;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: red;
+
+
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0px;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 255);
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+ 
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+
+  
+.program{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+  grid-gap: 1rem;
+  max-width: 100%;
+  margin-left:5%;
+  margin-top:5%;
+}
+
+
+.pro1{
+  position: relative;
+  display: flex;
+  flex: content;
+  margin-right:3%;
+}
+.pro2{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex: content;
+  margin:1%;
+}
+
+.pro3{
+  position: relative;
+  display: flex;
+  flex: content;
+  margin:1%;
+}
+.pro4{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex: content;
+  margin:1%;
+}
+
+
+@media only screen and (min-width:387px){
+  .tips{
+  width: 90%;
+  margin-left: 0rem;
+}
+}
+@media only screen and (max-width:387px){
+  .tips{
+  max-width: 60%;
+  margin-left: 20%;
+  font-size: 30px;
+}
+}
+.tips{
+  max-width: 60%;
+  margin-left: 20%;
+  font-size: 20px;
+}
+.level{
+  font-size: 80%;
+  color: rgb(255, 0, 0);
+  font-family: cursive;
+}
+.title-content{
+  max-width: 80%;
+  margin-left: 10%;
+  font-size: 150%;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+      <a href="#home">Home</a>
+    
+
+  <a href="#news">About</a>
+
+
+  <div class="dropdown">
+    <button class="dropbtn">menu
+      <i class="fa fa-bars"></i>
+    </button>
+
+    
+    <div class="dropdown-content">
+      <span style=color:black>Examples in</span>
+      <a href="JAVA-PROGRAM-FOR-DIVIDING-TWO-NUMBER-IN-DECIMAL.html"><span style=color:red>Java</span></a>
+      <a href="python_program_for_adding_three_number_in_integer.html"><span style=color:red>Python</span></a>
+      <a href="RUBY_PROGRAM_FOR_ADDING_TWO_NUMBER-IN-DECIMAL (1).html"><span style=color:red>RUBY</span></a>
+      <a href="C_PROGROGRAM_FOR_ADDING_TWO_NUMBERS_IN_DECIMAL.html"><span style=color:red>C#</span></a>
+
+    </div>
+  </div> 
+</div>
+<div  class="program">
+ 
+    <div class="pro1">
+
+<img src="/media/{{nam}}" alt=""  height="300px" width="300px" no-repeat>
+
+</div>
+<div class="pro2">
+  <!-- <img src="/media/emoticon-1693696_640.png" alt=""height="300px" width="200px"></div> -->
+  <img src="/media/{{image}}.png" alt=""height="300px" width="400px"></div>
+
+  <div class="pro2">
+  <!-- <img src="/media/Untitled.png" alt=""height="300px" width="300px" no-repeat> -->
+  <img src="/media/Untitled.png" alt=""height="300px" width="300px" no-repeat>
+
+</div>
+</div>
+<p></p>
+<div class="level"> 
+  <h1>{{comments}}</h1>
+<h1>And your handwriting type is {{type}}</h1>
+<h1>Level is{{level}}</h1>
+</div>
+  </p>
+  <p>
+ 
+ <div class="title-content">
+    Some of which make someone to improve thier handwriting<br> <br>
+  </div>
+  <div class="tips">
+
+   <span style="color:red"> i) </span> Try to usde a high quality pen, which has its own power to change your handwriting
+   <br> <br>
+   <span style="color:red"> ii) </span> Hold the pen with the correct grid, which you feel more comfortable
+   <br> <br> 
+   <span style="color:red"> iii)</span>  Focus on arm and waist
+   <br> <br> 
+   <span style="color:red"> iv) </span> The most,important thing use the line paper .
+   <br> <br> 
+   <span style="color:red"> v)  </span>Be a master in proper spacing 
+  <br> <br> 
+  <span style="color:red"> vi) </span>  Practise each letter
+  <br> <br>  
+  <span style="color:red"> vii)</span>   Stick with one style and your style of handwrinting is <span style="color:blue"> {{type}}</span> 
+  <br> <br>  
+  <span style="color:red">  viii)</span>   Get inspired by others whose handwriting is awesome like mine😎😎😎😎😎😎😎.
+  </p>  
+</div>
+  <div class=box-div>
+    <p><a href="ABOUT-US.html">About Us</a></p>
+    <p><a href="CONTACT-US.html">Contact Us</a></p>
+    <p><a href="disclaimers.html">disclaimers</a></p>
+    <p><a href="terms-and-condition.html">Term and condition</a></p>
+    <p><a href="privacy-policy.html">Privacy and policy</a></p>
+   
+</div>
+</body>
+</html>
